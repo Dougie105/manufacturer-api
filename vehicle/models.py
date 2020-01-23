@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Maserati(models.Model):
+    owner = models.ForeignKey('auth.user', on_delete=models.CASCADE)
     year = models.IntegerField(blank=False)
     model = models.CharField(max_length=20)
     description = models.TextField()
