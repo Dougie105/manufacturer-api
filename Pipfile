@@ -12,6 +12,8 @@ django = "*"
 djangorestframework = "*"
 gunicorn = "*"
 whitenoise = "*"
+django-cors-headers = "*"
+django-environ = "*"
 
 [requires]
 python_version = "3.7"
